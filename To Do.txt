@@ -1,0 +1,3 @@
+- Fill out the remaining portions of style.css header
+- Create screenshot image
+
