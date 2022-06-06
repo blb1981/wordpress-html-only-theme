@@ -1,5 +1,6 @@
 <?php 
 // Setup
+define( 'HO_DEV_MODE', true);
 
 
 // Includes
