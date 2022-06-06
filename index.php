@@ -9,8 +9,20 @@
 </head>
 <body>
   <h1>Site Title</h1>
+
+  <?php
+    if ( has_nav_menu('primary') ) {
+      wp_nav_menu([
+        'theme_location'        => 'primary',
+        'container'             => false,
+        'menu_class'            => 'navigation-primary',
+        'fallback_cb'           => false,
+        'depth'                 => 4
+      ]);
+    }
+  ?>
   
-  <ul>
+  <!-- <ul>
     <li><a href="#">Airplanes</a></li>
       <ul>
         <li><a href="#">Military</a></li>
@@ -21,7 +33,7 @@
     <li><a href="#">Fly-Ins</a></li>
     <li><a href="#">Jobs</a></li>
     <li><a href="#">Memes</a></li>
-  </ul>
+  </ul> -->
   <?php wp_footer(  ); ?>
 </body>
 </html>

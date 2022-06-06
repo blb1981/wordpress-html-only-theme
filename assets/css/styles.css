@@ -2,3 +2,9 @@ body {
   color: red;
   line-height: 1.6;
 }
+
+.navigation-primary a:link,
+.navigation-primary a:visited,
+.navigation-primary a:active {
+  color: #681525;
+}

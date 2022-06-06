@@ -2,7 +2,7 @@
 
 function ho_enqueue() {
   $uri                       = get_theme_file_uri(); // Returns a URL
-  $ver                       = HO_DEV_MODE ? time() : false;
+  $ver                       = HO_DEV_MODE ? time() : false; // Returns false or 
 
   // Register styles
   wp_register_style( 'ho_styles', $uri . '/assets/css/styles.css', [], $ver );
