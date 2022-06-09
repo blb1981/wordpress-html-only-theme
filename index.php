@@ -17,23 +17,14 @@
         'container'             => false,
         'menu_class'            => 'navigation-primary',
         'fallback_cb'           => false,
-        'depth'                 => 4
+        'depth'                 => 4,
+        'walker'                => new HO_Custom_Nav_Walker()
       ]);
     }
   ?>
+
+  <h2>Hello??</h2>
   
-  <!-- <ul>
-    <li><a href="#">Airplanes</a></li>
-      <ul>
-        <li><a href="#">Military</a></li>
-        <li><a href="#">GA</a></li>
-        <li><a href="#">Ultralights</a></li>
-      </ul>
-    <li><a href="#">Airports</a></li>
-    <li><a href="#">Fly-Ins</a></li>
-    <li><a href="#">Jobs</a></li>
-    <li><a href="#">Memes</a></li>
-  </ul> -->
   <?php wp_footer(  ); ?>
 </body>
 </html>

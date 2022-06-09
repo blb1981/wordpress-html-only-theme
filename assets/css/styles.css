@@ -8,3 +8,7 @@ body {
 .navigation-primary a:active {
   color: #681525;
 }
+
+.special {
+  font-weight: bold;
+}
