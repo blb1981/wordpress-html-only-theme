@@ -4,6 +4,7 @@
 body {
   color: red;
   line-height: 1.6;
+  padding: 1rem;
 }
 
 .navigation-primary a:link,
@@ -20,10 +21,15 @@ body {
 .content {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 1rem;
 }
 
 .sidebar {
   padding-top: 3rem;
+}
+
+.search-form {
+  background-color: yellow;
 }
 
 .footer {
