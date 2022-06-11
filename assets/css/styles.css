@@ -14,6 +14,16 @@ body {
 
 .special {
   font-weight: bold;
+  margin: 0;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.sidebar {
+  padding-top: 3rem;
 }
 
 .footer {
