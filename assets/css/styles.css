@@ -1,3 +1,6 @@
+.reset {
+}
+
 body {
   color: red;
   line-height: 1.6;
@@ -11,4 +14,9 @@ body {
 
 .special {
   font-weight: bold;
+}
+
+.footer {
+  color: white;
+  background-color: darkslateblue;
 }
