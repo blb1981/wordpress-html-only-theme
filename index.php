@@ -3,13 +3,17 @@
 <section class="content">
 
   <div class="main">
-    <h2>Hello??</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quae error quisquam blanditiis nesciunt nihil reiciendis iusto consequatur eius est?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quae error quisquam blanditiis nesciunt nihil reiciendis iusto consequatur eius est?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quae error quisquam blanditiis nesciunt nihil reiciendis iusto consequatur eius est?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quae error quisquam blanditiis nesciunt nihil reiciendis iusto consequatur eius est?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quae error quisquam blanditiis nesciunt nihil reiciendis iusto consequatur eius est?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, quae error quisquam blanditiis nesciunt nihil reiciendis iusto consequatur eius est?</p>
+    <?php
+      if ( have_posts() ) :
+        while ( have_posts() ): 
+          the_post(  );
+          // Looks for...
+          // 1 content-excerpt.php
+          // 2 content.php
+          get_template_part( 'partials/post/content', 'excerpt' );
+        endwhile;
+      endif;
+    ?>
   </div>
 
 <?php get_sidebar(); ?>
