@@ -41,6 +41,15 @@ img {
   /* padding-top: 3rem; */
 }
 
+.pagination-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .pagination-links > :last-child {
+  justify-self: end;
+} */
+
 .search-form {
   background-color: yellow;
 }

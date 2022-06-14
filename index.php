@@ -14,7 +14,18 @@
         endwhile;
       endif;
     ?>
+
+
+    <div class="pagination-links">
+    <span>
+      <?php next_post_link( '%link', 'Newer posts' ); ?>
+    </span>  
+    <span>
+      <?php previous_post_link( '%link', 'Older posts' ); ?>
+    </span>
+    </div>
   </div>
+
 
 <?php get_sidebar(); ?>
   
